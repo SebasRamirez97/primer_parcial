@@ -1,0 +1,24 @@
+from .matriz_vacia import vacia
+
+def buscar_paciente(matriz: list,nunmero_historia_clinica: int)->list|str: 
+    """Recibe una matriz y un numero de historia clinica.
+    En primer instancia revisa si la matriz esta vacia, en caso de 
+    estarlo imprimira un mensaje de matriz vacia. 
+    Revisara si algun paciente coincide con el numero de historia clinica 
+    en el caso de existir nos imprimira la informacion del paciente.
+    En caso de no existir nos imprimira un mensaje de paciente no encontrado.
+     
+    ### Args:
+        matriz: list
+        numero_historia_clinica: int
+    ### Returns:
+        str | list
+    """
+    if(vacia(matriz)):
+        print("La matriz esta vacia ingrese datos antes seleccionar esta opcion\n")
+    else:
+        for i in range(len(matriz)):
+            if(matriz[i][0] == nunmero_historia_clinica):
+                print(matriz[i])
+            else:
+                print("No se encontro el producto\n")
