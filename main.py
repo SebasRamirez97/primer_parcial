@@ -1,8 +1,12 @@
 from funciones.cargar_pacientes import ingreso_pacientes as carga
 from funciones.mostrrar_segun import mostrar_todos as todos
 from funciones.busqueda_por_historia import buscar_paciente as buscar
+from funciones.ordenar_por_historia import ordenar_pacientes_ascendente as ordenar
+from funciones.mostrrar_segun import mostrar_paciente_mas_dias_internacion as mas_dias_internacion
+from funciones.mostrrar_segun import mostrar_paciente_menos_dias_internacion as menos_dias_internacion
+
 opcion = 0
-matriz = []
+matriz = [[1212,"Jorge",54,"Tos",5], [1213,"carlos",44,"Fiebre",5], [1214,"Alberto",54,"Fiebre",4], [1214,"Pablo",54,"Fiebre",4]]
 while(opcion != 9):
     print("MENU PRINCIPAL")
     print("1. Carga pacientes.\n" \
@@ -10,9 +14,9 @@ while(opcion != 9):
     "3. Buscar pacientes por numero de historia clinica.\n" \
     "4. Ordenar pacientes por numero de historia clinica.\n" \
     "5. Mostrar pacientes con mas dias de internacion.\n" \
-    "6. Mostrar pacientes con menos dias de ibnternacion.\n" \
+    "6. Mostrar pacientes con menos dias de internacion.\n" \
     "7. Cantidad de pacientes con mas de 5 dias de internacion.\n" \
-    "8. Promedio de dias de internacion de todos los pascientes." \
+    "8. Promedio de dias de internacion de todos los pascientes.\n" \
     "9. Salir.")
 
     opcion = int(input("Seleccione una opcion: "))
@@ -25,7 +29,12 @@ while(opcion != 9):
             todos(matriz)
         case 3:
             numero_historia_clinica = int(input("Ingrese el numero de historia " \
-            "clinica del paciente que desea buscar"))
-            buscar(matriz,numero_historia_clinica)
+            "clinica del paciente que desea buscar: "))
+            print(buscar(matriz,numero_historia_clinica))
         case 4:
-            pass
+            print(ordenar(matriz))
+        case 5:
+            print(mas_dias_internacion(matriz))
+        case 6:
+            print(menos_dias_internacion(matriz))
+        
