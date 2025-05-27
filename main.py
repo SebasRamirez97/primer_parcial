@@ -4,9 +4,11 @@ from funciones.busqueda_por_historia import buscar_paciente as buscar
 from funciones.ordenar_por_historia import ordenar_pacientes_ascendente as ordenar
 from funciones.mostrrar_segun import mostrar_paciente_mas_dias_internacion as mas_dias_internacion
 from funciones.mostrrar_segun import mostrar_paciente_menos_dias_internacion as menos_dias_internacion
+from funciones.mostrrar_segun import mostrar_mayor_5_dias_internacion as mas_5_dias_internacion
+from funciones.promedio_internacion_pacientes import promedio_pacientes as promedio
 
 opcion = 0
-matriz = [[1212,"Jorge",54,"Tos",5], [1213,"carlos",44,"Fiebre",5], [1214,"Alberto",54,"Fiebre",4], [1214,"Pablo",54,"Fiebre",4]]
+matriz = [[1212,"Jorge",54,"Tos",5], [1213,"carlos",44,"Fiebre",5], [1214,"Alberto",54,"Fiebre",4], [1215,"Pablo",54,"Fiebre",4]]
 while(opcion != 9):
     print("MENU PRINCIPAL")
     print("1. Carga pacientes.\n" \
@@ -37,4 +39,12 @@ while(opcion != 9):
             print(mas_dias_internacion(matriz))
         case 6:
             print(menos_dias_internacion(matriz))
-        
+        case 7:
+            print(mas_5_dias_internacion(matriz))
+        case 8:
+            print(promedio(matriz))
+        case 9:
+            print("Finalizando la sesion.")
+        case _:
+            print("No es un valor correcto de los indicados.")
+
