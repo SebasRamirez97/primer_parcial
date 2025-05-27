@@ -14,7 +14,7 @@ def promedio_pacientes(matriz)->float:
     '''
     
     if(vacia(matriz)):
-        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion\n"
+        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion.\n"
     else:
         sumatoria = 0
         cantidad_pacientes = len(matriz)

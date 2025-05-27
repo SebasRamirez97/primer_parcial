@@ -1,5 +1,5 @@
 from .matriz_vacia import vacia
-
+from .mostrar_segun import mostrar_todos as mostrar
 def ordenar_pacientes_ascendente(matriz: list)->list:
     """Recibe una matriz, en primer instancia 
     revisa si la matriz esta vacia, en caso de 
@@ -13,7 +13,7 @@ def ordenar_pacientes_ascendente(matriz: list)->list:
         list
     """
     if(vacia(matriz)):
-        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion\n"
+        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion.\n"
     else:
         for i in range(len(matriz)):
             for j in range(len(matriz)-i-1):
@@ -22,4 +22,4 @@ def ordenar_pacientes_ascendente(matriz: list)->list:
                     matriz[j+1] = matriz[j]
                     matriz[j] = aux
 
-        return matriz
+        mostrar(matriz)

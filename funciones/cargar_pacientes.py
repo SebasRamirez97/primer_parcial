@@ -1,11 +1,11 @@
 def ingreso_pacientes(matriz:list, cantidad: int)->None:
     """Recibe una matriz y la cantidad de datos que se desea ingresar.
-    Luego nos hara llenar cada posicion de la matriz
-    con los diferentes datos correspondiente al paciente y por ultimo los agregara a la matriz.
+    Luego nos hara llenar cada posicion de lista paciente
+    con los diferentes datos correspondiente y por ultimo los agregara a la matriz.
         
     ### Args:
         matriz: list
-        cantidad :int
+        cantidad: int
     ### Returns:
         None
     """

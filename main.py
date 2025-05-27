@@ -8,7 +8,7 @@ from funciones.mostrar_segun import mostrar_mayor_5_dias_internacion as mas_5_di
 from funciones.promedio_internacion_pacientes import promedio_pacientes as promedio
 
 opcion = 0
-matriz = [[1212,"Jorge",54,"Tos",5], [1213,"carlos",44,"Fiebre",5], [1214,"Alberto",54,"Fiebre",4], [1215,"Pablo",54,"Fiebre",4]]
+matriz = [[1215,"Jorge",54,"Toz",2], [1212,"carlos",44,"Fiebre",4], [1213,"Alberto",54,"Fiebre",4]]
 while(opcion != 9):
     print("MENU PRINCIPAL")
     print("1. Carga pacientes.\n" \
@@ -34,11 +34,11 @@ while(opcion != 9):
             "clinica del paciente que desea buscar: "))
             print(buscar(matriz,numero_historia_clinica))
         case 4:
-            print(ordenar(matriz))
+            ordenar(matriz)
         case 5:
-            print(mas_dias_internacion(matriz))
+            mas_dias_internacion(matriz)
         case 6:
-            print(menos_dias_internacion(matriz))
+            menos_dias_internacion(matriz)
         case 7:
             print(mas_5_dias_internacion(matriz))
         case 8:

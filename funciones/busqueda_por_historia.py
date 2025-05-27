@@ -15,10 +15,10 @@ def buscar_paciente(matriz: list,nunmero_historia_clinica: int)->list|str:
         str | list
     """
     if(vacia(matriz)):
-        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion\n"
+        return "La matriz esta vacia ingrese datos antes seleccionar esta opcion.\n"
     else:
         for i in range(len(matriz)):
             if(matriz[i][0] == nunmero_historia_clinica):
                 return matriz[i]
             
-        return "No se encontro el paciente\n"
+        return "No se encontro el paciente.\n"
