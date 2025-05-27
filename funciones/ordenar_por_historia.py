@@ -4,8 +4,8 @@ def ordenar_pacientes_ascendente(matriz: list)->list:
     """Recibe una matriz, en primer instancia 
     revisa si la matriz esta vacia, en caso de 
     estarlo nos dara un mensaje de matriz vacia. 
-    Sino nos ordena la matriz segun el precio de 
-    manera ascendente y la devuelve.
+    Sino nos ordena la matriz segun la cantidad de dias de internacion
+    de manera ascendente y la devuelve.
     
     ### Args:
         matriz: list

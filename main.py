@@ -1,10 +1,10 @@
 from funciones.cargar_pacientes import ingreso_pacientes as carga
-from funciones.mostrrar_segun import mostrar_todos as todos
+from funciones.mostrar_segun import mostrar_todos as todos
 from funciones.busqueda_por_historia import buscar_paciente as buscar
 from funciones.ordenar_por_historia import ordenar_pacientes_ascendente as ordenar
-from funciones.mostrrar_segun import mostrar_paciente_mas_dias_internacion as mas_dias_internacion
-from funciones.mostrrar_segun import mostrar_paciente_menos_dias_internacion as menos_dias_internacion
-from funciones.mostrrar_segun import mostrar_mayor_5_dias_internacion as mas_5_dias_internacion
+from funciones.mostrar_segun import mostrar_paciente_mas_dias_internacion as mas_dias_internacion
+from funciones.mostrar_segun import mostrar_paciente_menos_dias_internacion as menos_dias_internacion
+from funciones.mostrar_segun import mostrar_mayor_5_dias_internacion as mas_5_dias_internacion
 from funciones.promedio_internacion_pacientes import promedio_pacientes as promedio
 
 opcion = 0

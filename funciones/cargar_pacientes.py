@@ -14,6 +14,6 @@ def ingreso_pacientes(matriz:list, cantidad: int)->None:
         nombre = input("Ingrese el nombre del paciente: ")
         edad = int(input("Ingrese la edad del paciente: "))
         diagnostico = input("Ingrese el diagnostico del paciente: ")
-        cantidad_dias_internacion = int(input("Ingrese la cantidad de dias de internacion del paciente:"))
+        cantidad_dias_internacion = int(input("Ingrese la cantidad de dias de internacion del paciente: "))
 
         matriz += [[numero_historia_clinica,nombre,edad,diagnostico,cantidad_dias_internacion]]

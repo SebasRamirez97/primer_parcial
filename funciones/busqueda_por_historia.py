@@ -5,8 +5,8 @@ def buscar_paciente(matriz: list,nunmero_historia_clinica: int)->list|str:
     En primer instancia revisa si la matriz esta vacia, en caso de 
     estarlo imprimira un mensaje de matriz vacia. 
     Revisara si algun paciente coincide con el numero de historia clinica 
-    en el caso de existir nos imprimira la informacion del paciente.
-    En caso de no existir nos imprimira un mensaje de paciente no encontrado.
+    en el caso de existir nos devolvera la informacion del paciente.
+    En caso de no existir nos devolvera un mensaje de paciente no encontrado.
      
     ### Args:
         matriz: list

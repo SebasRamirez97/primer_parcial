@@ -1,6 +1,15 @@
 from .matriz_vacia import vacia
 
-def mostrar_todos(matriz):
+def mostrar_todos(matriz: list)->None:
+    '''Recibe una matriz En primer instancia revisa si la matriz esta vacia, en caso de 
+    estarlo imprimira un mensaje de matriz vacia.
+    Sino nos imprimira todos los datos de la matriz.
+    
+    ###Argas:
+        matriz: list
+    ###Returns:
+        None
+    '''
     if(vacia(matriz)):
         return "La matriz esta vacia ingrese datos antes seleccionar esta opcion\n"
     else:
@@ -63,7 +72,7 @@ def mostrar_mayor_5_dias_internacion(matriz: list)->str|list:
     """Recibe una matriz, en primer instancia 
     revisa si la matriz esta vacia, en caso de 
     estarlo nos dara un mensaje de matriz vacia. 
-    En el caso de haber pacientes con mas de 5 dias de internacion devuelve
+    Sino en el caso de haber pacientes con mas de 5 dias de internacion devuelve
     la cantidad, en el caso de no haber devuelve un mensaje de no hay pacientes
     con mas de 5 dias de internacion.
      
@@ -78,9 +87,10 @@ def mostrar_mayor_5_dias_internacion(matriz: list)->str|list:
     else:
         cantidad = 0
         for i in range(len(matriz)):
-            if matriz[i][4] < 5:
+            if matriz[i][4] > 5:
                 cantidad += 1
+        
         if cantidad == 0:
-            return "No hay pacientes con mas de 5 dias de internacion"
+            return "No hay pacientes con mas de 5 dias de internacion\n"
         else:
-            return cantidad
+            return f"La cantidad de pacientes con mas de 5 dias de internacion son{cantidad}\n"
